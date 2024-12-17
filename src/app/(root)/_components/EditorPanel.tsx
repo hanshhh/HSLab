@@ -52,7 +52,7 @@ function EditorPanel() {
     <div className="relative">
       <div className="relative bg-[#12121a]/90 backdrop-blur rounded-xl border border-white/[0.05] p-6">
         {/* Header */}
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-4 flex-wrap">
           <div className="flex items-center gap-3">
             <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#1e1e2e] ring-1 ring-white/5">
               <Image
@@ -109,7 +109,9 @@ function EditorPanel() {
                from-blue-500 to-blue-600 opacity-90 hover:opacity-100 transition-opacity"
             >
               <ShareIcon className="size-4 text-white" />
-              <span className="text-sm font-medium text-white ">Share</span>
+              <span className="text-sm font-medium text-white hidden sm:block">
+                Share
+              </span>
             </motion.button>
           </div>
         </div>
