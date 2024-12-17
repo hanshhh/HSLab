@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* global.css or a similar global stylesheet */
+.gutter.gutter-horizontal {
+  background-color: #ccc; /* Light grey background */
+  cursor: col-resize; /* Show the resize cursor */
+}
+
+.gutter.gutter-horizontal:hover {
+  background-color: #999; /* Darker grey on hover */
+}
