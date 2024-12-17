@@ -35,6 +35,27 @@ console.log('Even numbers:', evenNumbers);
 const sum = numbers.reduce((acc, curr) => acc + curr, 0);
 console.log('Sum of numbers:', sum);`,
   },
+  c: {
+    id: "c",
+    label: "C",
+    logoPath: "/c.png",
+    pistonRuntime: { language: "gcc", version: "10.2.0" }, // api that we're gonna be using
+    monacoLanguage: "c",
+    defaultCode: `// C Playground
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {1, 2, 3, 4, 5};
+    int sum = 0;
+    int length = sizeof(numbers) / sizeof(numbers[0]);
+
+    for (int i = 0; i < length; i++) {
+        sum += numbers[i];
+    }
+    printf("Sum of numbers: %d", sum);
+    return 0;
+}`,
+  },
   typescript: {
     id: "typescript",
     label: "TypeScript",
